@@ -1,0 +1,156 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #3c9dca;
+}
+.eyes{
+	position: absolute;
+	top: 30%;
+	transform: translateY(-50%);
+	text-align: center;
+	width: 100%;
+		
+}
+.eye{
+	width: 110px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: inline-block;
+	position: relative;
+	border: black solid thin;
+	margin: 10px;/*distance between eyes*/
+}
+.head{
+	width:600px;
+    height:600px;
+	position: absolute;
+    top: 10%;
+	left:30%;
+	border-radius:100%;
+	background:#3c9dca;
+	
+	z-index: -1;
+}
+.ball{
+	width:10px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 15px solid #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.shape img{
+    position: relative;
+    top:-20px;
+	width:10%;
+z-index: 0;
+}
+.shape1 img{
+    position: relative;
+    top:100px;
+	width:50%;
+z-index: 0;
+}
+.white{
+width: 514px;
+height: 452px;
+border-radius: 100%;
+position: relative;
+top: 70px;
+left: 38px;
+background: #FFF;
+
+z-index: -1;
+}
+.line_left{
+width: 150px;
+height:2px;
+transform:rotate(20deg);
+top: 90px;
+left: 14px;
+position:relative;
+border-radius: 10%;
+background: #000;
+list-style: none;
+display: block;
+}
+.line_left::before{
+content:'';
+width: 150px;
+height:2px;
+top: 70px;
+transform:rotate(-20deg);
+position:relative;
+border-radius: 10%;
+background: #000;
+list-style: none;
+display: block;
+}
+.line_left::after{
+content:'';
+transform:rotate(-40deg);
+width: 150px;
+height:2px;
+top: 120px;
+left: 30px;
+position:relative;
+border-radius: 10%;
+background: #000;
+list-style: none;
+display: block;
+}
+.line_right{
+width: 150px;
+height:2px;
+transform:rotate(160deg);
+top: 90px;
+left: 370px;
+position:relative;
+border-radius: 10%;
+background: #000;
+list-style: none;
+display: block;
+}
+.line_right::before{
+content:'';
+width: 150px;
+height:2px;
+bottom: 100px;
+position:relative;
+transform:rotate(30deg);
+border-radius: 10%;
+background: #000;
+list-style: none;
+display: block;
+left:20px;
+}
+.line_right::after{
+content:'';
+width: 150px;
+height:2px;
+bottom: 50px;
+transform:rotate(10deg);
+left: 0px;
+position:relative;
+border-radius: 10%;
+background: #000;
+list-style: none;
+display: block;
+}
+.line_vertical{
+width: 2px;
+height: 200px;
+top: 70px;
+left: 260px;
+position: absolute;
+border-radius: 10%;
+background: #000;
+z-index: 1;
+}
+
