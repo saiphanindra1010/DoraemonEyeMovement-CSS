@@ -28,7 +28,8 @@ body{
     height:600px;
 	position: absolute;
     top: 10%;
-	left:30%;
+	left:50%;
+	margin-left: -300px;
 	border-radius:100%;
 	background:#3c9dca;
 	
